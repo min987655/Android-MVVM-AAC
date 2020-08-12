@@ -3,14 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.0"
-
     defaultConfig {
         applicationId "com.cos.mvvmstudy"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,6 +17,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    // 이거 빌드하면 커멜 표기법으로 NoteItemBinding 자바 파일이 자동 생성됨
+    dataBinding{
+        enabled = true
     }
 }
 

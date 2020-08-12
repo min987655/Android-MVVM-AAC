@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private NoteAdapter adapter;
     private FloatingActionButton mFab;
 
-
     private RecyclerView recyclerView;
 
     @Override
